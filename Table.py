@@ -1,6 +1,8 @@
 from selenium import webdriver
 
-driver = webdriver.Chrome(executable_path="C:\chromedriver_win32\chromedriver.exe")
+from Locators.Constants import Constants
+
+driver = webdriver.Chrome(executable_path=Constants.driver)
 
 driver.get("http://testautomationpractice.blogspot.com/")
 

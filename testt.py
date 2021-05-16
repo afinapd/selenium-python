@@ -12,11 +12,13 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 import unittest
 import HtmlTestRunner
 
+from Locators.Constants import Constants
+
 
 class TestAPAANNIH(unittest.TestCase):
 
     def setUp(self) :
-        self.driver = webdriver.Chrome(executable_path="C:\chromedriver_win32\chromedriver.exe")
+        self.driver = webdriver.Chrome(executable_path=Constants.driver)
         self.vars = {}
 
     def tearDown(self):

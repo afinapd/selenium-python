@@ -6,6 +6,9 @@ from selenium import webdriver
 
 #
 import sys
+
+from Locators.Constants import Constants
+
 sys.path.append("C:/Users/NB01/PycharmProjects/HelloWorld")
 from LoginPage import LoginPage
 
@@ -14,7 +17,7 @@ class TestLogin(unittest.TestCase):
     baseURL = "https://admin-demo.nopcommerce.com/"
     email = "admin@yourstore.com"
     password = "admin"
-    driver = webdriver.Chrome(executable_path="C:\chromedriver_win32\chromedriver.exe")
+    driver = webdriver.Chrome(executable_path=Constants.driver)
 
     @classmethod
     def setup_method(self, method):

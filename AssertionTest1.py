@@ -1,9 +1,12 @@
 import unittest
 from selenium import webdriver
 
+from Locators.Constants import Constants
+
+
 class Test(unittest.TestCase):
     def testName(self):
-        driver = webdriver.Chrome(executable_path=r"C:\Users\afinapd\PycharmProjects\HelloWorld\chromedriver\chromedriver.exe")
+        driver = webdriver.Chrome(executable_path=Constants.driver)
         driver.get("https://www.google.com/")
         titleWeb=driver.title
 

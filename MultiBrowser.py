@@ -2,7 +2,9 @@ from selenium import webdriver;
 import time
 from  selenium.webdriver.common.keys import Keys
 
-driver=webdriver.Chrome(executable_path="C:\chromedriver_win32\chromedriver.exe")
+from Locators.Constants import Constants
+
+driver=webdriver.Chrome(executable_path=Constants.driver)
 
 driver.get("https://ipermit.beraucoal.co.id/")
 print(driver.title)

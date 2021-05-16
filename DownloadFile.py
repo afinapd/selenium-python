@@ -1,10 +1,12 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
+from Locators.Constants import Constants
+
 ChromeOptions=Options()
 ChromeOptions.add_experimental_option("prefs",{"download.default_directory":"C:\\Users\\NB01\\Pictures"})
 
-driver = webdriver.Chrome(executable_path="C:\chromedriver_win32\chromedriver.exe", chrome_options=ChromeOptions)
+driver = webdriver.Chrome(executable_path=Constants.driver)
 driver.get("http://demo.automationtesting.in/FileDownload.html")
 driver.maximize_window()
 

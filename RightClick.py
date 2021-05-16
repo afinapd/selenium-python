@@ -1,7 +1,9 @@
 from selenium import webdriver
 from selenium.webdriver import ActionChains
 
-driver = webdriver.Chrome(executable_path="C:\chromedriver_win32\chromedriver.exe")
+from Locators.Constants import Constants
+
+driver = webdriver.Chrome(executable_path=Constants.driver)
 
 driver.get("https://swisnl.github.io/jQuery-contextMenu/demo.html")
 

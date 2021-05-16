@@ -1,6 +1,8 @@
 from selenium import webdriver
 
-driver = webdriver.Chrome(executable_path=r"C:\Users\afinapd\Downloads\chromedriver_win32\chromedriver.exe")
+from Locators.Constants import Constants
+
+driver = webdriver.Chrome(executable_path=Constants.driver)
 
 driver.get("https://www.countries-ofthe-world.com/flags-of-the-world.html")
 
